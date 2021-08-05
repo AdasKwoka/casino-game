@@ -1,0 +1,174 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: azure;
+}
+
+.main-wrapper {
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  -moz-filter: brightness(0.3);
+  -o-filter: brightness(0.3);
+  -ms-filter: brightness(0.3);
+  filter: brightness(0.3);
+}
+
+.wrap {
+  position: absolute;
+  min-width: 80%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.boards {
+  display: flex;
+  max-width: 70%;
+  margin: 5% auto 0;
+  justify-content: space-around;
+}
+
+.board {
+  flex-basis: 20%;
+  height: 30vh;
+  background-color: #ccc;
+}
+
+form {
+  margin-top: 5%;
+  text-align: center;
+}
+
+label {
+  font-size: 3rem;
+}
+
+input#bid {
+  font-size: 3rem;
+  width: 10%;
+  border: 2px solid black
+}
+
+button {
+  font-size: 3rem;
+  margin-left: 5%;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 15%;
+  border: 1px solid black;
+  box-shadow: 2px 10px #c34444;
+  background-color: #ff4040;
+  color: azure;
+  transition: .4s;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 3%;
+}
+
+p {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+
+@media (max-width: 823px) {
+  html {
+    font-size: 7px;
+  }
+
+  .title,
+  .boards,
+  form {
+    margin-top: 2%;
+  }
+
+  button {
+    box-shadow: none;
+    font-size: 2rem;
+    margin-left: 2%;
+  }
+}
+
+
+@media (max-width: 568px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+
+@media (max-width: 420px) and (orientation: portrait) {
+  html {
+    font-size: 7px;
+  }
+
+  .title,
+  h2,
+  p {
+    margin-top: 10%;
+  }
+
+  .boards {
+    margin-top: 10%;
+    max-width: 100%;
+  }
+
+  .board {
+    flex-basis: 25%;
+    height: 25vh;
+  }
+
+  button {
+    box-shadow: none;
+    font-size: 2rem;
+    margin-left: 2%;
+    width: 10vh;
+    height: 10vh;
+  }
+
+  input#bid {
+    width: 20%;
+  }
+}
+
+@media (max-width: 320px) and (orientation: portrait) {
+  html {
+    font-size: 6px;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jednoręki bandyta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <img src="./img/main-bgc.jpg" alt="one-armed-bandit photo">
+    <div class="wrap">
+      <h1 class="title">Gra jednoręki bandyta - spróbuj szczęścia!</h1>
+      <div class="boards">
+        <div class="board"></div>
+        <div class="board"></div>
+        <div class="board"></div>
+      </div>
+
+      <form action="">
+        <label for="bid">Podaj stawkę: </label><input type="number" id="bid">
+        <button>Zakręć</button>
+      </form>
+
+      <h2>Twoje środki do gry: <span class="wallet"></span></h2>
+      <p><span class="alert"></span>Ilość gier: <span class="games"></span>. Ilość wygranych: <span
+          class="wins"></span>.
+        Ilość przegranych: <span class="losses"></span></p>
+    </div>
+    <script src="./js/Wallet.js"></script>
+    <script src="./js/Statistics.js"></script>
+    <script src="./js/Draw.js"></script>
+    <script src="./js/Result.js"></script>
+    <script src="./js/Game.js"></script>
+    <script src="./js/main.js"></script>
+  </div>
+</body>
+
+</html>
